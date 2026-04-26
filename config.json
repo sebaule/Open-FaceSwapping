@@ -1,0 +1,118 @@
+{
+  "app": {
+    "titre": "Face Swap Borne",
+    "plein_ecran": true,
+    "largeur": 1080,
+    "hauteur": 1920,
+    "couleur_fond": "#0d0d0d",
+    "couleur_accent": "#e91e8c",
+    "couleur_texte": "#ffffff",
+    "couleur_bouton": "#e91e8c",
+    "couleur_bouton_texte": "#ffffff",
+    "police_titre": "Arial 48 bold",
+    "police_texte": "Arial 22",
+    "police_bouton": "Arial 28 bold",
+    "logo_path": "assets/logo.png",
+    "background_path": "assets/background.jpg"
+  },
+
+  "accueil": {
+    "titre": "✨ Face Swap ✨",
+    "sous_titre": "Devenez votre célébrité préférée !",
+    "texte_bouton": "COMMENCER",
+    "delai_auto_secondes": 30,
+    "animation_idle": true
+  },
+
+  "disclaimer": {
+    "titre": "Consentement & Droits",
+    "texte": "En utilisant cette borne, vous acceptez que votre visage soit utilisé uniquement pour créer une image de divertissement.\n\nCette photo sera envoyée sur notre serveur et accessible via QR code pendant 24h.\n\nAucune donnée n'est conservée au-delà de cette durée.\n\nVous devez avoir plus de 16 ans pour utiliser cette borne.",
+    "texte_accepter": "✅ J'accepte et je continue",
+    "texte_refuser": "❌ Refuser",
+    "checkbox_obligatoire": true
+  },
+
+  "choix_template": {
+    "titre": "Choisissez votre personnage",
+    "sous_titre": "Avec qui voulez-vous vous retrouver ?",
+    "colonnes": 3,
+    "taille_vignette": 250,
+    "texte_bouton_suivant": "VALIDER →",
+    "templates_dossier": "assets/templates"
+  },
+
+  "webcam": {
+    "titre": "Prenez votre photo !",
+    "instructions": "Regardez la caméra et restez immobile",
+    "index_camera": 0,
+    "compte_a_rebours": 5,
+    "nb_essais_max": 3,
+    "texte_bouton_photo": "📸 PRENDRE LA PHOTO",
+    "texte_bouton_recommencer": "🔄 Recommencer",
+    "texte_bouton_valider": "✅ Utiliser cette photo",
+    "miroir": true,
+    "resolution_largeur": 1280,
+    "resolution_hauteur": 720
+  },
+
+  "traitement": {
+    "titre": "Magie en cours...",
+    "messages_attente": [
+      "Analyse de votre visage...",
+      "Application du style...",
+      "Fusion des visages...",
+      "Finalisation...",
+      "Envoi de votre photo..."
+    ],
+    "roop_script_path": "C:/Open-FaceSwapping/faceswap.py",
+    "roop_python_path": "python",
+    "roop_model": "C:/Open-FaceSwapping/models/inswapper_128.onnx",
+    "roop_gfpgan": "C:/Open-FaceSwapping/models/GFPGANv1.4.pth",
+    "roop_gpu": false,
+    "output_dossier": "output",
+    "upload": {
+	  "actif": true,
+	  "url": "http://votre-serveur.com/upload.php",
+	  "token": "",
+	  "timeout_secondes": 30,
+  	  "champ_fichier": "file",
+  	  "champ_id": "id_session",
+      "raccourcir_url": false
+    },
+	"messages_erreur": {
+		"visage_non_detecte": "😕 Aucun visage détecté...\nRepositionnez-vous face à la caméra et réessayez !",
+		"template_non_detecte": "😕 Problème avec le personnage choisi,\nveuillez en choisir un autre.",
+		"timeout": "⏱️ Le traitement a pris trop de temps,\nveuillez réessayer.",
+		"upload_failed": "📡 Envoi impossible,\nvérifiez la connexion réseau.",
+		"erreur_generique": "😕 Une erreur est survenue,\nveuillez réessayer."
+	}
+  },
+
+  "resultat": {
+    "titre": "🎉 Votre photo est prête !",
+    "sous_titre": "Scannez le QR code pour télécharger votre photo",
+    "texte_url_base": "http://votre-serveur.com/photos/",
+    "taille_qrcode": 500,
+    "duree_affichage_secondes": 60,
+    "texte_bouton_recommencer": "🔄 Nouvelle photo",
+    "texte_bouton_accueil": "🏠 Accueil",
+    "afficher_apercu": true,
+    "afficher_url": false
+  },
+
+  "boutons_physiques": {
+    "actif": true,
+    "annuler": "<BackSpace>",
+    "precedent": "<Left>",
+    "suivant": "<Right>",
+    "valider": "<Return>"
+  },
+
+  "debug": {
+    "actif": false,
+    "simuler_roop": false,
+    "simuler_upload": false,
+    "afficher_fps": false
+  }
+  
+}
