@@ -1,4 +1,4 @@
-# 🎭 Face Swap Borne
+# 🎭 Open-FaceSwapping
 
 Application Python pour borne photo événementielle avec face-swapping par intelligence artificielle.
 L'utilisateur choisit un personnage, prend sa photo via webcam, et reçoit un QR code pour télécharger sa photo transformée.
